@@ -47,6 +47,36 @@ body {
   border-color: #0078d7;
 }
 
+/* Suchen-Button: grüner Hintergrund */
+#searchButton {
+  background: #2ecc40;
+  color: #fff;
+  border: 1px solid #27ae36;
+  border-radius: 0 8px 8px 0;
+  transition: background 0.2s, border 0.2s;
+}
+#searchButton:hover {
+  background: #27ae36;
+  border-color: #219a2a;
+}
+
+/* Neue Abfrage: grüner Rand, weißer Hintergrund */
+#newQueryButton {
+  background: #fff;
+  color: #000;
+  border: 2px solid #2ecc40;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+#newQueryButton:hover {
+  background: #2ecc40;
+  color: #000;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
