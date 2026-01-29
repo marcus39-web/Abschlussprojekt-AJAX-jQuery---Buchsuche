@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Ajax Bücher-Suche</title>
+    <!-- Einbindung des CSS-Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Hauptüberschrift -->
         <h1>Bücher-Suche</h1>
+        <!-- Suchleiste mit Eingabefeld und Button -->
         <div class="searchbar">
             <input type="text" id="searchInput" placeholder="Buchtitel eingeben...">
             <button id="searchButton">Suchen</button>
         </div>
         <div class="grid">
+            <!-- Bereich für Suchergebnisse -->
             <div class="panel">
                 <h2>Suchergebnisse</h2>
                 <div id="results"></div>
             </div>
+            <!-- Bereich für Buchdetails -->
             <div class="panel">
                 <h2>Buch-Details</h2>
                 <div id="details"></div>
             </div>
         </div>
     </div>
+    <!-- Einbindung der JavaScript-Dateien für AJAX und Logik -->
     <script src="js/search.js"></script>
     <script src="js/details.js"></script>
     <script src="js/app.js"></script>
