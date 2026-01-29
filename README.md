@@ -21,12 +21,24 @@ Dieses Projekt ist eine AJAX-basierte Webanwendung zur Suche und Anzeige von Bü
 - Zweiter AJAX-Request für Detaildaten
 - Detailansicht ohne Seitenreload
 
-## Projektstruktur
-- **css/**: Stylesheet für das Layout
-- **js/**: JavaScript-Logik (app.js, search.js, details.js)
-- **server/**: PHP-Backend (search.php, details.php, pdo-connect.inc.php)
-- **books.sql**: Datenbankstruktur und Beispieldaten
-- **index.html**: Einstiegspunkt der Anwendung
+## Projektstruktur (Tree)
+
+```text
+ajax-buecherprojekt/
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   ├── details.js
+│   └── search.js
+├── server/
+│   ├── details.php
+│   ├── pdo-connect.inc.php
+│   └── search.php
+├── books.sql
+├── index.html
+└── README.md
+```
 
 ## Installation & Nutzung
 1. **Datenbank einrichten:**
