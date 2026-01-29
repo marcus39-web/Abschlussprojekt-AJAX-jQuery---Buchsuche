@@ -15,7 +15,8 @@ Dieses Projekt ist eine AJAX-basierte Webanwendung zur Suche und Anzeige von Bü
 
 ## Features
 
-- Suchfeld für Buchtitel
+- Suchfeld für Buchtitel oder Autor
+- **Autocomplete/Suchvorschläge:** Während der Eingabe werden passende Titel/Autoren aus der Datenbank vorgeschlagen
 - AJAX-Request zur Buchsuche (ohne Seitenreload)
 - Dynamische Anzeige der Treffer als Tabelle
 - "Details"-Button je Buch für weitere Informationen
@@ -33,6 +34,7 @@ ajax-buecherprojekt/
 │   ├── details.js
 │   └── search.js
 ├── server/
+│   ├── autocomplete.php
 │   ├── details.php
 │   ├── pdo-connect.inc.php
 │   └── search.php
@@ -61,6 +63,7 @@ ajax-buecherprojekt/
 - Die Anwendung funktioniert komplett ohne Seitenreload
 - Die PHP-Skripte liefern JSON-Daten für das Frontend
 - Die Browser-Konsole hilft beim Debuggen
+- **Autocomplete:** Die Datei server/autocomplete.php liefert Vorschläge für das Suchfeld (Titel/Autor)
 
 ---
 
