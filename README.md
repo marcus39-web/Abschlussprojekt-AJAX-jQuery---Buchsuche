@@ -1,8 +1,8 @@
 # 🔎 Hinweise
 
-* Die PHP-Dateien liefern JSON
-* Nutze die Browser-Konsole zum Debuggen
-* Baue die Anwendung schrittweise:
+- Die PHP-Dateien liefern JSON
+- Nutze die Browser-Konsole zum Debuggen
+- Baue die Anwendung schrittweise:
   1. Übersicht
   2. Tabelle
   3. Details
@@ -14,6 +14,7 @@
 Dieses Projekt ist eine AJAX-basierte Webanwendung zur Suche und Anzeige von Büchern aus einer MySQL-Datenbank. Die Anwendung nutzt PHP als Backend und Vanilla JavaScript für die dynamische Anzeige im Frontend.
 
 ## Features
+
 - Suchfeld für Buchtitel
 - AJAX-Request zur Buchsuche (ohne Seitenreload)
 - Dynamische Anzeige der Treffer als Tabelle
@@ -41,6 +42,7 @@ ajax-buecherprojekt/
 ```
 
 ## Installation & Nutzung
+
 1. **Datenbank einrichten:**
    - books.sql in MySQL importieren (z.B. mit HeidiSQL oder phpMyAdmin)
 2. **Backend konfigurieren:**
@@ -49,11 +51,13 @@ ajax-buecherprojekt/
 4. **index.html im Browser öffnen**
 
 ## Technik
+
 - PHP (PDO, MySQL)
 - Vanilla JavaScript (Fetch API)
 - HTML5 & CSS3
 
 ## Hinweise
+
 - Die Anwendung funktioniert komplett ohne Seitenreload
 - Die PHP-Skripte liefern JSON-Daten für das Frontend
 - Die Browser-Konsole hilft beim Debuggen

@@ -11,18 +11,18 @@ if (empty($_GET['q'])) {
   echo json_encode(array('err' => '<p>2 Keine Datensätze gefunden.</p>'));
   exit;
 } else {
-  // Suchbegriff für die Titelsuche
+  // Suchbegriff für die Titelsuche oder Autorensuche
   $strSearch = '%' . $_GET['q'] . '%';
 }
 
 $arrOutput = array();
 
-// SQL-Statement für die Suche nach Buchtiteln
-$sql = 'SELECT `id`, `isbn`, `title`, `author`, `publisher`, `image`  FROM `items` WHERE `title` LIKE :t';
+// SQL-Statement für die Suche nach Buchtiteln ODER Autoren
+$sql = 'SELECT `id`, `isbn`, `title`, `author`, `publisher`, `image`  FROM `items` WHERE `title` LIKE :q OR `author` LIKE :q';
 
 try {
   if ($stmt = $pdo->prepare($sql)) {
-    $stmt->bindParam(':t', $strSearch);
+    $stmt->bindParam(':q', $strSearch);
     $stmt->execute();
     // Prüft, ob Treffer gefunden wurden
     if ($stmt->rowCount() === 0) {
