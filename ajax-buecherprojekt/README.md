@@ -67,4 +67,20 @@ ajax-buecherprojekt/
 
 ---
 
+## UI-Details: "Neue Abfrage"-Button
+
+Am Ende der Buchtitel /Autoren Eingabe gibt es einen Button mit der Aufschrift **"Neue Abfrage"**. Dieser Button hat folgende Funktion und Gestaltung:
+
+- **Funktion:** Setzt die Suche zurück und ermöglicht eine neue Buchsuche, ohne die Seite neu zu laden.
+- **Farbe/Design:**
+  - Hintergrund: Weiß (#fff)
+  - Schriftfarbe: Schwarz (#000)
+  - Grüner Rahmen: #2ecc40
+  - Beim Hover: Hintergrund wird grün (#2ecc40), Schrift bleibt schwarz
+  - Abgerundete Ecken, gut sichtbar platziert
+
+Siehe CSS-Klasse: `#newQueryButton` in css/style.css
+
+---
+
 © 2026 Marcus39-web
