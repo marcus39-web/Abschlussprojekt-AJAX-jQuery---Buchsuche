@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Bücher-Suche</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hauptüberschrift -->
+        <h1>Bücher-Suche</h1>
+        <!-- Suchleiste mit Eingabefeld und Button -->
+        <div class="searchbar">
+            <input type="text" id="searchInput" placeholder="Buchtitel eingeben...">
+            <button id="searchButton">Suchen</button>
+        </div>
+        <!-- Button für neue Abfrage -->
+        <button id="newQueryButton" style="margin-bottom: 24px;">Neue Abfrage</button>
+        <div class="grid">
+            <!-- Bereich für Suchergebnisse -->
+            <div class="panel">
+                <h2>Suchergebnisse</h2>
+                <div id="results"></div>
+            </div>
+            <!-- Bereich für Buchdetails -->
+            <div class="panel">
+                <h2>Buch-Details</h2>
+                <div id="details"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Funktionalität für Neue Abfrage Button -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var newQueryBtn = document.getElementById('newQueryButton');
+        if(newQueryBtn) {
+            newQueryBtn.onclick = function() {
+                document.getElementById('searchInput').value = '';
+                document.getElementById('results').innerHTML = '';
+                document.getElementById('details').innerHTML = '';
+                // Optional: Autocomplete-Liste ausblenden
+                var acList = document.getElementById('autocomplete-list');
+                if(acList) acList.style.display = 'none';
+            };
+        }
+    });
+    </script>
+    <script src="js/search.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
