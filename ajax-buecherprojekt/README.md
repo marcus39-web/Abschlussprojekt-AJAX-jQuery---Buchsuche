@@ -83,4 +83,10 @@ Siehe CSS-Klasse: `#newQueryButton` in css/style.css
 
 ---
 
+## Animation: Schwebendes Buch auf der Startseite
+
+Beim Laden der Startseite schwebt ein offenes Buch (📖) animiert über die Seite, bis der Nutzer die Maus bewegt, klickt oder eine Taste drückt. Das Buch verschwindet dann sanft. Die Animation ist in der Datei `js/floatingBook.js` implementiert und kann bei Bedarf angepasst werden (z.B. durch ein eigenes Bild statt Emoji).
+
+---
+
 © 2026 Marcus39-web
