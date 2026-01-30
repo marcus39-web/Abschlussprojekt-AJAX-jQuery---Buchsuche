@@ -1,6 +1,11 @@
 <?php
 // Stellt die Verbindung zur Datenbank her
 require_once "pdo-connect.inc.php";
+// Prüfen, ob $pdo korrekt initialisiert wurde
+if (!isset($pdo) || !($pdo instanceof PDO)) {
+  echo json_encode(array('err' => '<p>Datenbankverbindung fehlgeschlagen.</p>'));
+  exit;
+}
 
 // Prüft, ob ein GET-Parameter übergeben wurde
 if (empty($_GET)) {
